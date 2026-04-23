@@ -3,8 +3,8 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'dotnet restore' 
-                sh 'dotnet build --no-restore' 
+                powershell 'dotnet restore' 
+                powershell 'dotnet build --no-restore' 
             }
         }
     }
